@@ -1,0 +1,80 @@
+//CS311 Yoshii S22 llist.h
+//INSTRUCTION:
+//Llist class - header file template 
+//You must complete the ** parts and then complete llist.cpp
+//Don't forget PURPOSE and PARAMETERS 
+
+// =======================================================
+// HW#: HW3P1 llist
+// Your name: Andres Hinojosa
+// Compiler:  g++ 
+// File type: headher file  llist.h
+//=======================================================
+#include "elem.h"
+
+// alias el_t : element type definition
+typedef char el_t;  // char for now but can change later
+
+//a list node is defined here as a struct Node for now
+struct Node
+{
+  el_t Elem;   // elem is the element stored
+  Node *Next;  // next is the pointer to the next node
+};
+//---------------------------------------------------------
+
+class llist
+{
+    
+ protected:
+  Node *Front;       // pointer to the front node
+  Node *Rear;        // pointer to the rear node
+  int  Count;        // counter for the number of nodes
+
+  // untility function to move to a specified node position
+  void moveTo(int, Node*& temp);
+  
+ public:
+
+  // Exception handling classes 
+  class Underflow{};
+  class OutOfRange{};  // thrown when the specified Node is out of range
+
+  llist ();     // constructor to create a list object
+  ~llist();     // destructor to destroy all nodes
+  
+  //Function used to check if a list is empty
+  bool isEmpty();
+    
+  //function used to display all elements
+  void displayAll();
+
+  //adds an element to the front of a list
+  void addFront(el_t NewNum);
+    
+  //(1) Case 1
+
+  //adds an element to the rear of a list
+  void addRear(el_t NewNum);
+
+  //deletes the element at the front of a list
+  void deleteFront(el_t& OldNum);
+  
+  //---------------------------------------
+    
+  //deletes the element at the rear of a list
+  void deleteRear(el_t& OldNum);
+    
+  //Deletes the Ith element of a list
+  void deleteIth(int I, el_t& OldNum);  // calls moveTo
+
+  //inserts a node to the Ith position of a list
+  void insertIth(int I, el_t newNum);   // calls moveTo
+
+  //Copy Constructor to allow pass by value and return by value of a llist
+  llist(const llist& Original);
+  
+  //Overloading of = (returns a reference to a llist)
+  llist& operator=(const llist& OtherOne); 
+
+};

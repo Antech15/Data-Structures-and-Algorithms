@@ -1,0 +1,80 @@
+Script started on Mon 18 Apr 2022 07:22:41 PM PDT
+]0;hinoj030@empress:~/cs311files/CS311Progs/HWPrograms/forEC2/MSTShortest[?1034h[hinoj030@empress MSTShortest]$ g++ dgraph2.cpp elem.cpp llist.cpp slist.cpp mstmain.cpp 
+]0;hinoj030@empress:~/cs311files/CS311Progs/HWPrograms/forEC2/MSTShortest[hinoj030@empress MSTShortest]$ ./a.out
+Enter the input file name: dtable.txt
+read A read B read C read D read E read F 
+Adding A to tree
+[B+4 F+2 ]
+New Fringe: F with weight: 2
+New Fringe: B with weight: 4
+Name Kind Dist From
+A    T    0         [B+4 F+2 ]
+B    F    4    A    [A+1 C+3 D+4 ]
+C         0         [A+6 B+3 D+7 ]
+D         0         [A+6 E+2 ]
+E         0         [D+5 ]
+F    F    2    A    [D+2 E+3 ]
+Adding F to tree
+[D+2 E+3 ]
+New Fringe: E with weight: 3
+New Fringe: D with weight: 2
+Name Kind Dist From
+A    T    0         [B+4 F+2 ]
+B    F    4    A    [A+1 C+3 D+4 ]
+C         0         [A+6 B+3 D+7 ]
+D    F    2    F    [A+6 E+2 ]
+E    F    3    F    [D+5 ]
+F    T    2    A    [D+2 E+3 ]
+cont?.
+Adding D to tree
+[A+6 E+2 ]
+Old Fringe: E with edge cost: 2
+Name Kind Dist From
+A    T    0         [B+4 F+2 ]
+B    F    4    A    [A+1 C+3 D+4 ]
+C         0         [A+6 B+3 D+7 ]
+D    T    2    F    [A+6 E+2 ]
+E    F    2    D    [D+5 ]
+F    T    2    A    [D+2 E+3 ]
+cont?.
+Adding E to tree
+[D+5 ]
+Name Kind Dist From
+A    T    0         [B+4 F+2 ]
+B    F    4    A    [A+1 C+3 D+4 ]
+C         0         [A+6 B+3 D+7 ]
+D    T    2    F    [A+6 E+2 ]
+E    T    2    D    [D+5 ]
+F    T    2    A    [D+2 E+3 ]
+cont?.
+Adding B to tree
+[A+1 C+3 D+4 ]
+New Fringe: C with weight: 3
+Name Kind Dist From
+A    T    0         [B+4 F+2 ]
+B    T    4    A    [A+1 C+3 D+4 ]
+C    F    3    B    [A+6 B+3 D+7 ]
+D    T    2    F    [A+6 E+2 ]
+E    T    2    D    [D+5 ]
+F    T    2    A    [D+2 E+3 ]
+cont?.
+Adding C to tree
+[A+6 B+3 D+7 ]
+Name Kind Dist From
+A    T    0         [B+4 F+2 ]
+B    T    4    A    [A+1 C+3 D+4 ]
+C    T    3    B    [A+6 B+3 D+7 ]
+D    T    2    F    [A+6 E+2 ]
+E    T    2    D    [D+5 ]
+F    T    2    A    [D+2 E+3 ]
+cont?.
+Edges in the MST are:
+From A to B with 4
+From B to C with 3
+From F to D with 2
+From D to E with 2
+From A to F with 2
+]0;hinoj030@empress:~/cs311files/CS311Progs/HWPrograms/forEC2/MSTShortest[hinoj030@empress MSTShortest]$ exit
+exit
+
+Script done on Mon 18 Apr 2022 07:23:29 PM PDT

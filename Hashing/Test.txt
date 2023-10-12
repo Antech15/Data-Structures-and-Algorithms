@@ -1,0 +1,151 @@
+Script started on Sat 23 Apr 2022 05:50:29 PM PDT
+]0;hinoj030@empress:~/cs311files/CS311Progs/HWPrograms/forHW8[?1034h[hinoj030@empress forHW8]$ g++ elem.cpp htable.cpp hw8client.cpp llist.cpp slist.cpp
+]0;hinoj030@empress:~/cs311files/CS311Progs/HWPrograms/forHW8[hinoj030@empress forHW8]$ ./a.out
+This program will be used for employers, schools, or hosptials to store the information and contact information for their workers, students, or clients.
+What is the input file? (.txt file)testinput.txt
+0:[empty]
+1:[empty]
+2:[empty]
+3:[empty]
+4:[empty]
+5:[empty]
+6:[empty]
+7:[empty]
+8:[empty]
+9:[empty]
+10:[empty]
+11:[empty]
+12:[123 Mark (760)648-76463 31 , ]
+13:[empty]
+14:[empty]
+15:[empty]
+16:[empty]
+17:[empty]
+18:[425 Jake (354)125-6254 18 , ]
+19:[empty]
+20:[empty]
+21:[empty]
+22:[empty]
+23:[empty]
+24:[empty]
+25:[543 Layla (800)245-1453 28 , ]
+26:[empty]
+27:[empty]
+28:[empty]
+29:[empty]
+30:[empty]
+31:[empty]
+32:[empty]
+33:[218 Steven (123)456-7891 21 , 662 Khonshu (442)764-6385 24 , ]
+34:[empty]
+35:[empty]
+36:[empty]
+
+MENU: ---- 
+1 Add an element
+2 Find an element
+3 Delete an element
+4 Display the table
+5 Save the table to a file
+6 Quit
+1
+What is the key to add? 530
+What is the name?Harrow
+What is the phone number?(760)215-9453
+What is the age?62
+Added the element in slot 12
+MENU: ---- 
+1 Add an element
+2 Find an element
+3 Delete an element
+4 Display the table
+5 Save the table to a file
+6 Quit
+2
+What is the key to find? 662
+Found this:
+662 Khonshu (442)764-6385 24 
+MENU: ---- 
+1 Add an element
+2 Find an element
+3 Delete an element
+4 Display the table
+5 Save the table to a file
+6 Quit
+3
+What is the key to find? 662
+Found it and deleted it from slot:33
+MENU: ---- 
+1 Add an element
+2 Find an element
+3 Delete an element
+4 Display the table
+5 Save the table to a file
+6 Quit
+4
+The current contents are: 
+0:[empty]
+1:[empty]
+2:[empty]
+3:[empty]
+4:[empty]
+5:[empty]
+6:[empty]
+7:[empty]
+8:[empty]
+9:[empty]
+10:[empty]
+11:[empty]
+12:[123 Mark (760)648-76463 31 , 530 Harrow (760)215-9453 62 , ]
+13:[empty]
+14:[empty]
+15:[empty]
+16:[empty]
+17:[empty]
+18:[425 Jake (354)125-6254 18 , ]
+19:[empty]
+20:[empty]
+21:[empty]
+22:[empty]
+23:[empty]
+24:[empty]
+25:[543 Layla (800)245-1453 28 , ]
+26:[empty]
+27:[empty]
+28:[empty]
+29:[empty]
+30:[empty]
+31:[empty]
+32:[empty]
+33:[218 Steven (123)456-7891 21 , ]
+34:[empty]
+35:[empty]
+36:[empty]
+MENU: ---- 
+1 Add an element
+2 Find an element
+3 Delete an element
+4 Display the table
+5 Save the table to a file
+6 Quit
+5
+Saved the updated table in newout.txt
+MENU: ---- 
+1 Add an element
+2 Find an element
+3 Delete an element
+4 Display the table
+5 Save the table to a file
+6 Quit
+6
+bye
+]0;hinoj030@empress:~/cs311files/CS311Progs/HWPrograms/forHW8[hinoj030@empress forHW8]$ more newout.txt
+123 Mark (760)648-76463 31 
+530 Harrow (760)215-9453 62 
+425 Jake (354)125-6254 18 
+543 Layla (800)245-1453 28 
+218 Steven (123)456-7891 21 
+]0;hinoj030@empress:~/cs311files/CS311Progs/HWPrograms/forHW8[hinoj030@empress forHW8]$ exit
+exit
+
+Script done on Sat 23 Apr 2022 05:54:07 PM PDT

@@ -1,0 +1,74 @@
+Script started on Mon 18 Apr 2022 07:17:52 PM PDT
+]0;hinoj030@empress:~/cs311files/CS311Progs/HWPrograms/forEC2/MSTShortest[?1034h[hinoj030@empress MSTShortest]$ ex./a.oug++ slist.cpp llist.cpp dgraph2.cpp elem.cpp shortestmain.cpp
+]0;hinoj030@empress:~/cs311files/CS311Progs/HWPrograms/forEC2/MSTShortest[hinoj030@empress MSTShortest]$ ./a.out
+Enter the input file name: utable.txt
+read A read B read C read D read E 
+Adding A to tree
+[B+1 ]
+New Fringe: B with weight: 1
+Name Kind Dist From
+A    T    0         [B+1 ]
+B    F    1    A    [A+1 C+5 D+2 ]
+C         0         [B+5 D+3 ]
+D         0         [B+2 C+3 E+4 ]
+E         0         [D+4 ]
+Adding B to tree
+[A+1 C+5 D+2 ]
+New Fringe: D with weight: 2
+New Fringe: C with weight: 5
+Name Kind Dist From
+A    T    0         [B+1 ]
+B    T    1    A    [A+1 C+5 D+2 ]
+C    F    6    B    [B+5 D+3 ]
+D    F    3    B    [B+2 C+3 E+4 ]
+E         0         [D+4 ]
+cont?.
+Adding D to tree
+[B+2 C+3 E+4 ]
+New Fringe: E with weight: 4
+Old Fringe: C with edge cost: 3
+Name Kind Dist From
+A    T    0         [B+1 ]
+B    T    1    A    [A+1 C+5 D+2 ]
+C    F    6    B    [B+5 D+3 ]
+D    T    3    B    [B+2 C+3 E+4 ]
+E    F    7    D    [D+4 ]
+cont?.
+Adding C to tree
+[B+5 D+3 ]
+Name Kind Dist From
+A    T    0         [B+1 ]
+B    T    1    A    [A+1 C+5 D+2 ]
+C    T    6    B    [B+5 D+3 ]
+D    T    3    B    [B+2 C+3 E+4 ]
+E    F    7    D    [D+4 ]
+cont?.
+Adding E to tree
+[D+4 ]
+Name Kind Dist From
+A    T    0         [B+1 ]
+B    T    1    A    [A+1 C+5 D+2 ]
+C    T    6    B    [B+5 D+3 ]
+D    T    3    B    [B+2 C+3 E+4 ]
+E    T    7    D    [D+4 ]
+cont?.
+Enter a goal vertex or Q: A
+Edges in the shortest path are:
+A
+Enter a goal vertex or Q: B
+Edges in the shortest path are:
+B<-----A
+Enter a goal vertex or Q: C
+Edges in the shortest path are:
+C<-----B<-----A
+Enter a goal vertex or Q: D
+Edges in the shortest path are:
+D<-----B<-----A
+Enter a goal vertex or Q: E
+Edges in the shortest path are:
+E<-----D<-----B<-----A
+Enter a goal vertex or Q: Q
+]0;hinoj030@empress:~/cs311files/CS311Progs/HWPrograms/forEC2/MSTShortest[hinoj030@empress MSTShortest]$ exit
+exit
+
+Script done on Mon 18 Apr 2022 07:18:27 PM PDT

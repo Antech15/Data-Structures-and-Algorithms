@@ -1,0 +1,63 @@
+Script started on Mon 18 Apr 2022 07:27:06 PM PDT
+]0;hinoj030@empress:~/cs311files/CS311Progs/HWPrograms/forEC2/MSTShortest[?1034h[hinoj030@empress MSTShortest]$ ex./a.oug++ dgraph2.cpp elem.cpp llist.cpp slist.cpp mstmain.cpp 
+]0;hinoj030@empress:~/cs311files/CS311Progs/HWPrograms/forEC2/MSTShortest[hinoj030@empress MSTShortest]$ ./a.out
+Enter the input file name: utable.txt
+read A read B read C read D read E 
+Adding A to tree
+[B+1 ]
+New Fringe: B with weight: 1
+Name Kind Dist From
+A    T    0         [B+1 ]
+B    F    1    A    [A+1 C+5 D+2 ]
+C         0         [B+5 D+3 ]
+D         0         [B+2 C+3 E+4 ]
+E         0         [D+4 ]
+Adding B to tree
+[A+1 C+5 D+2 ]
+New Fringe: D with weight: 2
+New Fringe: C with weight: 5
+Name Kind Dist From
+A    T    0         [B+1 ]
+B    T    1    A    [A+1 C+5 D+2 ]
+C    F    5    B    [B+5 D+3 ]
+D    F    2    B    [B+2 C+3 E+4 ]
+E         0         [D+4 ]
+cont?.
+Adding D to tree
+[B+2 C+3 E+4 ]
+New Fringe: E with weight: 4
+Old Fringe: C with edge cost: 3
+Name Kind Dist From
+A    T    0         [B+1 ]
+B    T    1    A    [A+1 C+5 D+2 ]
+C    F    3    D    [B+5 D+3 ]
+D    T    2    B    [B+2 C+3 E+4 ]
+E    F    4    D    [D+4 ]
+cont?.
+Adding C to tree
+[B+5 D+3 ]
+Name Kind Dist From
+A    T    0         [B+1 ]
+B    T    1    A    [A+1 C+5 D+2 ]
+C    T    3    D    [B+5 D+3 ]
+D    T    2    B    [B+2 C+3 E+4 ]
+E    F    4    D    [D+4 ]
+cont?.
+Adding E to tree
+[D+4 ]
+Name Kind Dist From
+A    T    0         [B+1 ]
+B    T    1    A    [A+1 C+5 D+2 ]
+C    T    3    D    [B+5 D+3 ]
+D    T    2    B    [B+2 C+3 E+4 ]
+E    T    4    D    [D+4 ]
+cont?.
+Edges in the MST are:
+From A to B with 1
+From D to C with 3
+From B to D with 2
+From D to E with 4
+]0;hinoj030@empress:~/cs311files/CS311Progs/HWPrograms/forEC2/MSTShortest[hinoj030@empress MSTShortest]$ exit
+exit
+
+Script done on Mon 18 Apr 2022 07:27:28 PM PDT
