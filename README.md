@@ -1,2 +1,2 @@
 # Data-Structures-and-Algorithms
- Class work for Data Structures and Algorithms
+Notable classwork for Data Structures and Algorithms
